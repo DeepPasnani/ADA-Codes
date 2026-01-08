@@ -18,11 +18,11 @@ void selectionsort(int arr[], int n)
         temp = arr[min];
         arr[min] = arr[i];
         arr[i] = temp;
-    }
-    if(is_swapped == 0)
-    {
-        printf("Elements are sorted.");
-        break;
+        if(is_swapped == 0)
+        {
+            printf("Elements are sorted.");
+            break;
+        }
     }
 }
 
